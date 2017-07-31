@@ -1,0 +1,21 @@
+使用该库需要初始化几个步骤
+
+ 1。在总项目的 build.gradle 添加
+
+ allprojects {
+     repositories {
+         jcenter()
+
+         ↓↓↓↓↓↓↓↓  这句  ↓↓↓↓↓↓↓↓↓↓↓  这句是因为项目中用到 IMagerPicker 工具类
+         maven { url 'https://jitpack.io' }
+     }
+ }
+
+ 2.在 app 项目的 build.gradle 添加
+  dependencies {
+
+      ↓↓↓↓↓↓↓↓  这句  ↓↓↓↓↓↓↓↓↓↓↓  这句是因为项目中用到 butterknife 这个工具类
+      annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+  }
+
+  3.如果项目使用到 Application 类  请继承  BaseApplication

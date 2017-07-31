@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <LinearLayout
+        android:id="@+id/lin_ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_centerInParent="true"
+        android:background="@drawable/center_dialog_bg"
+        >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/text_333"
+            android:textSize="16dp"
+            android:text="TITLE" />
+
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48px"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:textColor="@color/text_999"
+            android:layout_marginLeft="48px"
+            android:layout_marginRight="48px"
+            android:text="content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="40px"
+            android:background="@color/devider_ddd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+             >
+
+            <TextView
+                android:id="@+id/btn_Cancle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/text_999"
+                android:layout_height="match_parent"
+                android:text="cancel" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/devider_ddd" />
+
+            <TextView
+                android:id="@+id/btn_Confirm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/appColor"
+                android:layout_height="match_parent"
+                android:text="confirm" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

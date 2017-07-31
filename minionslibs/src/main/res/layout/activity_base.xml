@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    tools:context=".BaseActivity">
+
+    <!--沉浸式activity，这个view是用来占位的-->
+
+    <View
+        android:id="@+id/position_view"
+        android:background="#55000000"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <FrameLayout
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="168px"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/actionbar_TItle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="middle"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="9527"
+                android:textColor="#333333"
+                android:textSize="54px" />
+
+            <RelativeLayout
+                android:id="@+id/baseActionBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone">
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/actionber_img_back"
+            android:layout_width="168px"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:padding="48px"
+            android:layout_gravity="left"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/actionber_img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:padding="48px"
+                android:scaleType="center"
+                android:visibility="visible"
+
+                />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/actionber_tv_Right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:textSize="36px"
+                android:textColor="#333333"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/devider"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddddd"/>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        >
+
+    </FrameLayout>
+
+</LinearLayout>
